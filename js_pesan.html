@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Tugas Praktikum</title>
+</head>
+<body>
+<h2>Pesan</h2>
+<script language="JavaScript">
+    var nama= window.prompt("Masukan nama anda","");
+    
+    var nama_hari = new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu");
+    var nama_bulan = new Array("January", "February", "Maret", "April", "ei", "Juni", "July", "Agustus", "September", "Oktober", "November", "Desember");
+    
+    var tanggal=new Date();
+    var hari=tanggal.getDay();
+    var tgl=tanggal.getDate();
+    var bln=canggal.getMonth();
+    var thn=tanggal.getYear();
+
+for(var i=0;i<=6;1++)
+{
+if (i==hari)
+{
+if ((i==0) || (i==6))
+{
+    var kegiatan="Berlibur";
+    }else
+    {
+    var kegiatan="Bekerja";
+    }
+    break;
+    }
+}
+document.write("<pre>");
+document.write("Hallo :"+nama+"<br>");
+document.write("Hari ini adalah hari : "+nama_hari [hari]+","+tgl+" "+nama_bulan [bln]+""+thn+"<br>");
+document.write("Waktunya untuk :"+kegiatan);
+document.write("</pre>");
+</script>
+</body>
+</html>
